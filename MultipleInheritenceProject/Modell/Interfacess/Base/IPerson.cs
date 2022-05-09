@@ -17,45 +17,25 @@ namespace Kreta.Models.Interfaces.Base
         public DateTime DataOfBirth { get; set; }
 
         public string HungarianFullName { 
-            get
-            {
-                return LastName + " " + FirstName;
-            }
+
         }
 
         public string FullName
         {
-            get
-            {
-                return FirstName + " " + LastName;
-            }
+
         }
 
         public bool IsWooman
         {
-            get
-            {
-                return Wooman;
-            }
+
         }
 
         public bool IsMan
         {
-            get
-            {
-                return !Wooman;
-            }
+ 
         }
         public int Age
         {
-            get
-            {
-                int age = 0;
-                age = DateTime.Now.Year - DataOfBirth.Year;
-                if (DateTime.Now.DayOfYear < DataOfBirth.DayOfYear)
-                    age = age - 1;
-                return age;
-            }
         }
     }
 }

@@ -15,10 +15,7 @@ namespace Kreta.Models.Interfaces.Base
 
         public string WritingAddresses
         {
-            get
-            {
-                return City + "\n" + StreetAndNumber + "\n" + PostCode;
-            }
+
         }
     }
 }

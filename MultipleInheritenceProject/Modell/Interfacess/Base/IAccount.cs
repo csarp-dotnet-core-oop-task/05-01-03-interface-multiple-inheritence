@@ -20,14 +20,7 @@ namespace Kreta.Models.Interfaces.Base
 
         public bool IsSuccessfulLogin(string givenLoginName,string givenPassword)
         {
-            if ((VerifyLoginName(givenLoginName)) && (VerifyPassword(givenPassword)))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+
         }
 
     }

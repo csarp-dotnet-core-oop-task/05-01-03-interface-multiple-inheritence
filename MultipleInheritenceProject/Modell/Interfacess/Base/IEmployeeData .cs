@@ -14,13 +14,6 @@ namespace Kreta.Models.Interfaces.Base
 
         public bool HasChild
         {
-            get
-            {
-                if (NumberOfChildren > 0)
-                    return true;
-                else
-                    return false;
-            }
         }
     }
 }
